@@ -12,11 +12,11 @@ class Jester(Hero):
 
     def action(self):
         if self._Hero__random_action == 1:
-            return print(Hero.attack(self))
+            return Hero.attack(self)
         elif self._Hero__random_action == 2:
-            return print(Hero.defence(self))
+            return Hero.defence(self)
         elif self._Hero__random_action == 3:
-            return print(Hero.rest(self))
+            return Hero.rest(self)
 
 joker = Jester('Joker', 800, 15)
-print(joker.action())
+joker.action()
