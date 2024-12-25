@@ -91,5 +91,4 @@ def add_grade(user_id, lesson, grade):
     connect.commit()
 
 add_grade(1, 'math', 5)
-
 connect.close()
