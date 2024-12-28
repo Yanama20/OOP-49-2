@@ -170,8 +170,9 @@ def get_statistic():
     cursor.execute('SELECT * FROM statistic_view')
     statistics = cursor.fetchall()
     for statistic in statistics:
-        print(statistic)
+        return (statistic)
 
 create_grade_statistics_view()
 # delete_view()
-get_statistic()
+print(f'Максимальная, средняя, минимальная оценки:{get_statistic()}')
+
