@@ -118,6 +118,4 @@ def get_users_with_grades():
 
 # get_users_with_grades()
 
-
-
 connect.close()
